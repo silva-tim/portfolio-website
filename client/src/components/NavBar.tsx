@@ -1,19 +1,26 @@
-import { Link, Outlet } from "react-router-dom";
+import { links } from "../data";
+import { motion } from "framer-motion";
 
 export default function NavBar() {
   return (
-    <>
-      <div className="fixed top-0 left-0 flex w-screen py-4">
-        <div className="basis-2/5">Tim Silva</div>
-        <div className="flex justify-between basis-1/5">
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/contact">Contact</Link>
-        </div>
-        <div className="basis-2/5">hello</div>
-      </div>
-      <Outlet />
-    </>
+    <header className="relative flex justify-between top-20 sm:top-0">
+      <div>Tim Silva</div>
+      <div>Other</div>
+      <motion.div
+        className="fixed top-0 w-full p-3 sm:rounded-full bg-main sm:left-1/3 sm:w-1/3 bg-opacity-70"
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+      >
+        <nav>
+          <ul className="flex justify-around">
+            {links.map((link) => (
+              <motion.li key={link.href}>
+                <a href={link.href}>{link.name}</a>
+              </motion.li>
+            ))}
+          </ul>
+        </nav>
+      </motion.div>
+    </header>
   );
 }
