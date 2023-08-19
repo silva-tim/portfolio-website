@@ -6,7 +6,7 @@ function App() {
   return (
     <body className="h-[400rem]">
       <NavBar />
-      {/* <Home /> */}
+      <Home />
     </body>
   );
 }

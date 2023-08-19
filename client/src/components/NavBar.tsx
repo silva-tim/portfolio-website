@@ -7,7 +7,7 @@ export default function NavBar() {
       <div>Tim Silva</div>
       <div>Other</div>
       <motion.div
-        className="fixed top-0 w-full p-3 sm:rounded-full bg-main sm:left-1/3 sm:w-1/3 bg-opacity-70"
+        className="fixed top-0 w-full p-3 bg-mainLight sm:rounded-full sm:left-1/3 sm:w-1/3 bg-opacity-70"
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >
