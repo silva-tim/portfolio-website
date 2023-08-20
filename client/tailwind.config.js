@@ -4,7 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        main: "#42444C",
+        main: "#101214",
+        mainLight: "#2E3338",
+        secondary: "#FFC857",
+      },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+        mono: ["Roboto Mono", "sans-serif"],
+        josefin: ["Josefin Sans", "sans-serif"],
       },
     },
   },
