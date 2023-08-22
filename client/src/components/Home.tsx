@@ -25,12 +25,18 @@ export default function Home() {
           Full Stack Developer
         </h2>
         <div className="flex justify-center gap-4">
-          <button className="px-5 py-2 mt-6 text-sm border-2 rounded-sm sm:text-2xl border-secondary text-secondary ms-2">
+          <a
+            href="#contact"
+            className="px-5 py-2 mt-6 text-sm transition border-2 rounded-sm outline-none sm:text-2xl border-secondary text-secondary ms-2 hover:scale-110 active:scale-105 focus:scale-110"
+          >
             Contact
-          </button>
-          <button className="px-5 py-2 mt-6 text-sm text-black rounded-sm sm:text-2xl bg-secondary">
+          </a>
+          <a
+            href="#projects"
+            className="px-5 py-2 mt-6 text-sm text-black transition rounded-sm outline-none sm:text-2xl bg-secondary hover:scale-110 active:scale-105 focus:scale-110"
+          >
             Projects
-          </button>
+          </a>
         </div>
       </div>
     </section>
