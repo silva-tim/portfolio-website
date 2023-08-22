@@ -8,7 +8,7 @@ export default function About() {
         <div className="flex flex-wrap justify-center h-60 basis-full lg:basis-1/3">
           <div className="text-center">
             <img
-              src="../../public/me.png"
+              src="/me.png"
               alt=""
               className="m-auto bg-gray-400 rounded-full h-1/2"
             />
