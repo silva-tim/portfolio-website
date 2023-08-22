@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section id="about" className="bg-[#1A1D20] min-h-screen sm:min-h-[66vh]">
-      <h1 className="p-12 text-4xl text-center">About</h1>
+      <h1 className="p-12 font-mono text-4xl text-center">About</h1>
       <div className="flex flex-wrap w-11/12 m-auto">
         <div className="flex flex-wrap justify-center h-60 basis-full lg:basis-1/3">
           <div className="text-center">
