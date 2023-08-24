@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="bg-[#1A1D20] scroll-m-10 sm:scroll-m-20 min-h-screen sm:min-h-[66vh]"
+      className="bg-[#1A1D20] scroll-m-10 sm:scroll-m-24 min-h-screen sm:min-h-[66vh]"
     >
       <h1 className="p-12 font-mono text-4xl text-center">About</h1>
       <div className="flex flex-wrap w-11/12 m-auto">
