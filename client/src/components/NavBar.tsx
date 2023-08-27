@@ -4,7 +4,7 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 export default function NavBar() {
   return (
-    <header className="relative top-0 flex justify-between">
+    <header className="relative top-0 z-50 flex justify-between">
       <div className="absolute flex justify-between w-full h-20 top-12 sm:top-0">
         <motion.div
           initial={{ x: -100, opacity: 0 }}

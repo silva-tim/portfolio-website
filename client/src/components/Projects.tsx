@@ -7,7 +7,7 @@ export default function Projects() {
       <h1 className="p-12 font-mono text-4xl text-center">Projects</h1>
       <ul className="flex flex-wrap gap-4">
         {projects.map((i) => (
-          <li className="flex justify-center" key={i.projectNum}>
+          <li className="flex justify-center " key={i.projectNum}>
             <Project project={i} />
           </li>
         ))}
