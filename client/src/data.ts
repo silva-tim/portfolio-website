@@ -26,8 +26,37 @@ export const links = <Link[]>[
   },
 ];
 
-export const about1: string =
-  "I have always had a strong passion for computers/technology and after spending a few years working at a financial advisory firm I realized that I wanted a career that pursued these passions more. I decided to change paths and began to explore the world of programming.";
-
-export const about2: string =
-  "I enrolled in an accelerated program where I created several projects to learn the technologies that are used in the industry today. My current interests revolve around front-end web development, mostly React and Tailwind but I am always seeking to learn more.";
+export const projects = [
+  {
+    projectNum: 2,
+    name: "Nomad-Ventures",
+    live: "https://nomad-ventures.silvatim.com",
+    code: "https://github.com/silva-tim/nomad-ventures/",
+    desc: "A full stack web application for travelers who want to blog about their adventures.",
+    skills: [
+      "React",
+      "Node",
+      "Express",
+      "PostgreSQL",
+      "TypeScript",
+      "Tailwind",
+    ],
+    image: "/nomad.png",
+  },
+  {
+    projectNum: 1,
+    name: "CountryGo",
+    live: "https://silva-tim.github.io/country-go/",
+    code: "https://github.com/silva-tim/country-go",
+    desc: "A full stack web application for travelers who want to blog about their adventures.",
+    skills: [
+      "React",
+      "Node",
+      "Express",
+      "PostgreSQL",
+      "TypeScript",
+      "Tailwind",
+    ],
+    image: "/nomad.png",
+  },
+];
