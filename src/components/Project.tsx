@@ -11,7 +11,7 @@ type props = {
 
 export default function Project({ project }: props) {
   return (
-    <div className="relative flex overflow-hidden text-black transition bg-white rounded-sm h-80 basis-1/2 group hover:bg-opacity-90">
+    <div className="relative flex w-1/2 overflow-hidden text-black transition bg-white rounded-sm h-80 group hover:bg-opacity-90">
       <div className="flex flex-wrap pt-10 basis-1/2 ps-10">
         <h2 className="text-2xl basis-full">{project.name}</h2>
         <p className="h-32 py-2">{project.desc}</p>
