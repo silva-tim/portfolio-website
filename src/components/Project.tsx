@@ -11,12 +11,14 @@ type props = {
 
 export default function Project({ project }: props) {
   return (
-    <div className="relative flex flex-wrap mx-4 overflow-hidden text-black transition bg-white rounded-sm md:w-1/2 md:h-80 group hover:bg-opacity-90">
+    <div className="relative flex flex-wrap mx-4 overflow-hidden text-black transition bg-white rounded-sm md:w-2/3 lg:w-1/2 md:h-80 group hover:bg-opacity-90">
       <div className="flex flex-wrap justify-center pt-4 md:pt-10 basis-full md:basis-1/2 md:ps-10">
-        <h2 className="text-2xl text-center basis-full">{project.name}</h2>
-        <p className="py-2 text-center md:h-32">{project.desc}</p>
+        <h2 className="text-2xl text-center basis-full md:text-start">
+          {project.name}
+        </h2>
+        <p className="py-2 text-center md:h-28 md:text-start">{project.desc}</p>
         <div className="basis-full">
-          <ul className="flex flex-wrap justify-center gap-1">
+          <ul className="flex flex-wrap justify-center gap-1 md:justify-start">
             {project.skills.map((i) => (
               <li key={i} className="px-4 text-sm rounded-full bg-secondary">
                 {i}
@@ -41,7 +43,7 @@ export default function Project({ project }: props) {
           </a>
         </div>
       </div>
-      <div className="w-full px-10 py-5 transition md:w-3/4 md:absolute top-14 group-hover:-translate-x-2 group-hover:translate-y-2 group-hover:-rotate-2 -right-80">
+      <div className="w-full px-8 py-5 transition md:top-12 xl:w-4/5 md:absolute group-hover:-translate-x-2 group-hover:translate-y-2 group-hover:-rotate-2 -right-80">
         <img src={project.image} alt="" className="scale-125 rounded-md" />
       </div>
     </div>
