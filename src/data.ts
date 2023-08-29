@@ -52,4 +52,13 @@ export const projects = [
     skills: ["JavaScript", "HTML", "CSS", "Rest API"],
     image: "/countrygo.png",
   },
+  {
+    projectNum: 3,
+    name: "This Website",
+    live: "https://silvatim.com/",
+    code: "https://github.com/silva-tim/portfolio-website",
+    desc: "A front end web application to show off my portfolio projects while toying with some new tools I'm learning.",
+    skills: ["React", "TypeScript", "Tailwind", "Framer Motion"],
+    image: "/silvatim.png",
+  },
 ];
