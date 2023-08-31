@@ -9,7 +9,7 @@ export default function About() {
         <div className="flex flex-wrap justify-center h-60 basis-full lg:basis-1/3">
           <div className="text-center">
             <img
-              src="/me.png"
+              src="/images/me.png"
               alt=""
               className="m-auto rounded-full bg-slate-500 h-1/2"
             />
