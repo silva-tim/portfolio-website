@@ -1,4 +1,4 @@
-import Project from "./Project";
+import Project from "./ProjectCard";
 import { motion } from "framer-motion";
 import { projects } from "../data";
 
