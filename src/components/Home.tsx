@@ -1,9 +1,14 @@
+import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 
 export default function Home() {
   return (
     <section id="home" className="flex items-center justify-center h-screen">
-      <div className="text-center">
+      <motion.div
+        className="text-center"
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+      >
         <h1 className="font-mono text-3xl ps-4 md:text-6xl md:ps-8">
           {" "}
           <Typewriter
@@ -38,7 +43,7 @@ export default function Home() {
             Projects
           </a>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
