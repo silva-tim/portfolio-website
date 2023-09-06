@@ -125,7 +125,7 @@ export const skills = [
   },
   {
     name: "Git",
-    image: "https://git-scm.com/images/logos/downloads/Git-Icon-Black.png",
+    image: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
     link: "https://git-scm.com/",
   },
   {
