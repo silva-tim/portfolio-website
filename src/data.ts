@@ -123,4 +123,15 @@ export const skills = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/363px-CSS3_logo_and_wordmark.svg.png?20160530175649",
     link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
   },
+  {
+    name: "Git",
+    image: "https://git-scm.com/images/logos/downloads/Git-Icon-Black.png",
+    link: "https://git-scm.com/",
+  },
+  {
+    name: "Github",
+    image:
+      "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+    link: "https://github.com/",
+  },
 ];
