@@ -26,7 +26,7 @@ export default function Project({ project }: props) {
             ))}
           </ul>
         </div>
-        <div className="flex gap-2 py-3">
+        <div className="flex items-center gap-2 py-3">
           <a
             href={project.live}
             target="_blank"
