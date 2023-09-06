@@ -15,7 +15,7 @@ export default function SkillCard({ skill }: props) {
     >
       <div className="flex flex-wrap justify-center h-40 bg-white rounded-sm">
         <img src={skill.image} alt={skill.name} className="mt-4 h-1/2" />
-        <span className="text-center basis-full text-main">{skill.name}</span>
+        <span className="text-center text-main basis-full">{skill.name}</span>
       </div>
     </a>
   );
