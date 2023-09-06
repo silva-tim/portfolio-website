@@ -9,8 +9,8 @@ export default function Projects() {
       <div className="flex flex-wrap justify-center gap-4">
         {projects.map((i) => (
           <motion.div
-            initial={{ y: 100, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
+            initial={{ scale: 0, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
             className="flex justify-center w-full"
             key={i.projectNum}
           >
