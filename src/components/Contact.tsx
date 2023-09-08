@@ -6,17 +6,26 @@ export default function Contact() {
     <section id="contact" className="pb-10">
       <h1 className="p-12 font-mono text-4xl text-center">Contact</h1>
       <div className="flex justify-center gap-8">
-        <div className="flex items-center gap-3 px-3 py-2 text-2xl rounded-sm hover:underline bg-mainLight text-secondary">
+        <div className="flex items-center gap-3 px-3 py-2 text-2xl rounded-sm hover:underline bg-mainLight">
           <FiMail />
-          <a href="mailto: tim@silvatim.com">tim@silvatim.com</a>
+          <a href="mailto: tim@silvatim.com" className="text-secondary">
+            tim@silvatim.com
+          </a>
         </div>
-        <div className="flex items-center gap-3 px-3 py-2 text-2xl rounded-sm hover:underline text-secondary bg-mainLight">
+        <div className="flex items-center gap-3 px-3 py-2 text-2xl rounded-sm hover:underline bg-mainLight">
           <FaLinkedinIn />
-          <a href="https://www.linkedin.com/in/silva-tim/">silva-tim</a>
+          <a
+            href="https://www.linkedin.com/in/silva-tim/"
+            className="text-secondary"
+          >
+            silva-tim
+          </a>
         </div>
-        <div className="flex items-center gap-3 px-3 py-2 text-2xl rounded-sm hover:underline text-secondary bg-mainLight">
+        <div className="flex items-center gap-3 px-3 py-2 text-2xl rounded-sm hover:underline bg-mainLight">
           <FaGithub />
-          <a href="https://github.com/silva-tim">silva-tim</a>
+          <a href="https://github.com/silva-tim" className="text-secondary">
+            silva-tim
+          </a>
         </div>
       </div>
     </section>
