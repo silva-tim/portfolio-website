@@ -11,7 +11,6 @@ export default function Projects() {
           <motion.div
             initial={{ scale: 0, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ bounce: 0 }}
             className="flex justify-center w-full"
             key={i.projectNum}
           >
