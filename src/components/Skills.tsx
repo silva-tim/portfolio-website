@@ -11,7 +11,7 @@ export default function Skills() {
           <motion.div
             initial={{ scale: 0, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
-            className="transition xl:basis-1/6 basis-full sm:basis-1/3 hover:scale-105"
+            className="xl:basis-1/6 basis-full sm:basis-1/3 hover:scale-105"
             key={i.name}
           >
             <SkillCard skill={i} />

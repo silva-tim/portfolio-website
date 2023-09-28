@@ -41,7 +41,10 @@ export default function NavBar() {
           <ul className="flex justify-around">
             {links.map((link) => (
               <motion.li key={link.href}>
-                <a href={link.href} className="font-josefin">
+                <a
+                  href={link.href}
+                  className="hover:text-gray-400 font-josefin"
+                >
                   {link.name}
                 </a>
               </motion.li>
