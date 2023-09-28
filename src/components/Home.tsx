@@ -18,6 +18,7 @@ export default function Home() {
               "tim.silva",
               "<TimSilva />",
               "(tim) => Silva",
+              "tim(silva)",
             ]}
             loop={0}
             cursor

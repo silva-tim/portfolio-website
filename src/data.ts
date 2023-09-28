@@ -40,6 +40,7 @@ export const projects = [
       "PostgreSQL",
       "TypeScript",
       "Tailwind",
+      "AWS",
     ],
     image: "/images/nomad-ventures.png",
   },
@@ -58,7 +59,7 @@ export const projects = [
     live: "https://silvatim.com/",
     code: "https://github.com/silva-tim/portfolio-website",
     desc: "A front end web application to show off my portfolio projects while toying with some new tools I'm learning.",
-    skills: ["React", "TypeScript", "Tailwind", "Framer Motion"],
+    skills: ["React", "TypeScript", "Tailwind", "Framer Motion", "AWS"],
     image: "/images/silvatim.png",
   },
 ];
