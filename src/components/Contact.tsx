@@ -16,6 +16,7 @@ export default function Contact() {
           <FaLinkedinIn />
           <a
             href="https://www.linkedin.com/in/silva-tim/"
+            target="_blank"
             className="text-secondary"
           >
             silva-tim
@@ -23,7 +24,11 @@ export default function Contact() {
         </div>
         <div className="flex items-center gap-3 px-3 py-2 text-2xl rounded-sm hover:underline bg-mainLight">
           <FaGithub />
-          <a href="https://github.com/silva-tim" className="text-secondary">
+          <a
+            href="https://github.com/silva-tim"
+            target="_blank"
+            className="text-secondary"
+          >
             silva-tim
           </a>
         </div>
