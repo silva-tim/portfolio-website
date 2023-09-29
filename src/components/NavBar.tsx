@@ -1,8 +1,12 @@
 import { links } from "../data";
-import { motion } from "framer-motion";
+import { motion, spring } from "framer-motion";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import clsx from "clsx";
+import { useState } from "react";
 
 export default function NavBar() {
+  const [active, setActive] = useState("Home");
+
   return (
     <header className="relative top-0 z-50 flex justify-between">
       <div className="absolute flex justify-between w-full h-20 top-12 sm:top-0">
@@ -40,12 +44,26 @@ export default function NavBar() {
         <nav>
           <ul className="flex justify-around">
             {links.map((link) => (
-              <motion.li key={link.href}>
+              <motion.li key={link.href} className="relative">
                 <a
                   href={link.href}
-                  className="hover:text-gray-400 font-josefin"
+                  className={clsx("hover:text-secondary font-josefin", {
+                    "text-secondary": active === link.name,
+                  })}
+                  onClick={() => setActive(link.name)}
                 >
                   {link.name}
+                  {link.name === active && (
+                    <motion.span
+                      className="absolute inset-0 -mx-5 -my-2 rounded-full bg-main -z-10"
+                      layoutId="active"
+                      transition={{
+                        type: "spring",
+                        stiffness: 380,
+                        damping: 30,
+                      }}
+                    />
+                  )}
                 </a>
               </motion.li>
             ))}
