@@ -125,6 +125,12 @@ export const skills = [
     link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
   },
   {
+    name: "Framer Motion",
+    image:
+      "https://seeklogo.com/images/F/framer-motion-logo-DA1E33CAA1-seeklogo.com.png",
+    link: "https://www.framer.com/motion/",
+  },
+  {
     name: "Git",
     image: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
     link: "https://git-scm.com/",

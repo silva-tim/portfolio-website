@@ -1,5 +1,5 @@
 import { links } from "../data";
-import { motion, spring } from "framer-motion";
+import { motion } from "framer-motion";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import clsx from "clsx";
 import { useState } from "react";
@@ -55,7 +55,7 @@ export default function NavBar() {
                   {link.name}
                   {link.name === active && (
                     <motion.span
-                      className="absolute inset-0 -mx-5 -my-2 rounded-full bg-main -z-10"
+                      className="absolute inset-0 -mx-2 rounded-full md:-mx-5 md:-my-2 bg-main -z-10"
                       layoutId="active"
                       transition={{
                         type: "spring",
