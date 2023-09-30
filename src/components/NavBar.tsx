@@ -2,11 +2,8 @@ import { links } from "../data";
 import { motion } from "framer-motion";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import clsx from "clsx";
-import { useState } from "react";
 
 export default function NavBar() {
-  const [active, setActive] = useState("Home");
-
   return (
     <header className="relative top-0 z-50 flex justify-between">
       <div className="absolute flex justify-between w-full h-20 top-12 sm:top-0">
