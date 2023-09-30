@@ -1,6 +1,17 @@
+import { useInView } from "react-intersection-observer";
+import { useActiveContext } from "../context/activeContext";
+
 export default function About() {
+  const { ref, inView } = useInView();
+  const { setActive } = useActiveContext();
+
+  if (inView) {
+    setActive("About");
+  }
+
   return (
     <section
+      ref={ref}
       id="about"
       className="bg-[#1A1D20] scroll-m-10 sm:scroll-m-24 min-h-screen sm:min-h-[66vh]"
     >
