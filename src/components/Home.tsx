@@ -1,9 +1,27 @@
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import { Typewriter } from "react-simple-typewriter";
+import { useActiveContext } from "../context/activeContext";
+import { useEffect } from "react";
 
 export default function Home() {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+  const { setActive } = useActiveContext();
+
+  useEffect(() => {
+    if (inView) {
+      setActive("Home");
+    }
+  }, [inView, setActive]);
+
   return (
-    <section id="home" className="flex items-center justify-center h-screen">
+    <section
+      ref={ref}
+      id="home"
+      className="flex items-center justify-center h-screen"
+    >
       <motion.div
         className="text-center"
         initial={{ y: 100, opacity: 0 }}

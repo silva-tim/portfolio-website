@@ -5,7 +5,7 @@ import clsx from "clsx";
 import { useActiveContext } from "../context/activeContext";
 
 export default function NavBar() {
-  const { active, setActive } = useActiveContext();
+  const { active } = useActiveContext();
 
   return (
     <header className="relative top-0 z-50 flex justify-between">
@@ -50,7 +50,6 @@ export default function NavBar() {
                   className={clsx("hover:text-secondary font-josefin", {
                     "text-secondary": active === link.name,
                   })}
-                  onClick={() => setActive(link.name)}
                 >
                   {link.name}
                   {link.name === active && (

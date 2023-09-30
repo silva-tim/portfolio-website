@@ -1,13 +1,18 @@
 import { useInView } from "react-intersection-observer";
 import { useActiveContext } from "../context/activeContext";
+import { useEffect } from "react";
 
 export default function About() {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
   const { setActive } = useActiveContext();
 
-  if (inView) {
-    setActive("About");
-  }
+  useEffect(() => {
+    if (inView) {
+      setActive("About");
+    }
+  }, [inView, setActive]);
 
   return (
     <section

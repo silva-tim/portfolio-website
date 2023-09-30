@@ -1,9 +1,27 @@
 import Project from "./ProjectCard";
 import { projects } from "../data";
+import { useInView } from "react-intersection-observer";
+import { useActiveContext } from "../context/activeContext";
+import { useEffect } from "react";
 
 export default function Projects() {
+  const { ref, inView } = useInView({
+    threshold: 0.25,
+  });
+  const { setActive } = useActiveContext();
+
+  useEffect(() => {
+    if (inView) {
+      setActive("Projects");
+    }
+  }, [inView, setActive]);
+
   return (
-    <section id="projects" className="pb-20 scroll-m-10 sm:scroll-m-18 bg-main">
+    <section
+      ref={ref}
+      id="projects"
+      className="pb-20 scroll-m-10 sm:scroll-m-18 bg-main"
+    >
       <h1 className="p-12 font-mono text-4xl text-center">Projects</h1>
       <div className="flex flex-wrap justify-center gap-4">
         {projects.map((i) => (
