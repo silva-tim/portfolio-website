@@ -49,24 +49,39 @@ export default function About() {
             <p>
               I enrolled in an accelerated program where I created several
               projects to learn the technologies that are used in the industry
-              today. My current interests revolve around front-end web
-              development, mostly{" "}
+              today. I am a lifelong learner who is always interested in
+              pursuing new technologies and tools. I'm currently learning{" "}
               <a
-                href="https://react.dev/"
+                href="https://reactnative.dev/"
                 target="_blank"
                 className="underline text-secondary"
               >
-                React
+                React Native
               </a>{" "}
               and{" "}
               <a
-                href="https://tailwindcss.com/"
+                href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html"
                 target="_blank"
                 className="underline text-secondary"
               >
-                Tailwind
+                Dynamo DB
               </a>{" "}
-              but I am always seeking to learn more.
+              but I am always seeking to learn more. Feel free to{" "}
+              <a
+                href="mailto: tim@silvatim.com"
+                className="underline text-secondary"
+              >
+                email
+              </a>{" "}
+              me or connect with me on{" "}
+              <a
+                href="https://www.linkedin.com/in/silva-tim/"
+                target="_blank"
+                className="underline text-secondary"
+              >
+                LinkedIn
+              </a>
+              !
             </p>
           </div>
         </div>
