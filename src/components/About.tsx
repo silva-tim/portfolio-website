@@ -52,11 +52,11 @@ export default function About() {
               today. I am a lifelong learner who is always interested in
               pursuing new technologies and tools. I'm currently learning{" "}
               <a
-                href="https://reactnative.dev/"
+                href="https://sst.dev/"
                 target="_blank"
                 className="underline text-secondary"
               >
-                React Native
+                Serverless Stack
               </a>{" "}
               and{" "}
               <a
